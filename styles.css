@@ -88,6 +88,11 @@ main {
   padding-top: 10%;
 }
 
+#Filters {
+  margin-top: 30%;
+  padding-top: 20px;
+}
+
 #library {
   background: #567f06;
   position: relative;
@@ -129,7 +134,6 @@ main {
 #card h4 {
   font-size: 2rem;
   padding: 4%;
-  border-bottom: 2px solid #2a2a29;
 }
 
 #card p {
