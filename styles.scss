@@ -5,12 +5,14 @@
     scroll-behavior: smooth;
     padding: 0;
     margin: 0;
+
 }
 
 header{
     background: rgb(224, 224, 224);
     width: 100vw;
     height: 80px;
+    overflow: hidden;
 
     h1{
         color: rgb(42, 42, 41);
@@ -22,13 +24,15 @@ header{
     }
 }
 
-body::-webkit-scrollbar{
-    display: none;
-    }
+
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
 
 main{
     width: 100vw;
-    height: 85vh;
+    height:85vh;
     display: flex;
     justify-content: space-between;
     background:rgb(38, 38, 38);
@@ -40,6 +44,7 @@ main{
     width: 16%;
     background: hsl(80, 75%, 37%);
     border-radius: 6px;
+    overflow: hidden;
 }
 
 #C1{
@@ -76,14 +81,24 @@ main{
   }
 
 
+
+
 #library{
   background: hsl(80, 91%, 26%);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   position: relative;
+  overflow-y: scroll;
    left: 1%;
    height: 100%;
    width: 84%;
    border-radius: 6px;
    box-shadow: -18px 0px 0 rgb(47, 47, 47);
+
+   #library::-webkit-scrollbar{
+    display: inline;
+    }
 }
 
 
@@ -94,7 +109,7 @@ main{
     margin-top: 6%;
     margin-left: 3%;
     border-radius: 5px;
-    color: rgb(42, 42, 41);
+    color: red;
     border: 4px solid rgb(47, 47, 47);
       box-shadow: -5px 5px 0  rgb(47, 47, 47);
   

@@ -10,6 +10,7 @@ header {
   background: #e0e0e0;
   width: 100vw;
   height: 80px;
+  overflow: hidden;
 }
 
 header h1 {
@@ -21,8 +22,9 @@ header h1 {
   letter-spacing: 1px;
 }
 
-body::-webkit-scrollbar {
-  display: none;
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 main {
@@ -43,6 +45,7 @@ main {
   width: 16%;
   background: #76a518;
   border-radius: 6px;
+  overflow: hidden;
 }
 
 #C1 {
@@ -85,13 +88,27 @@ main {
 
 #library {
   background: #567f06;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   position: relative;
+  overflow-y: scroll;
   left: 1%;
   height: 100%;
   width: 84%;
   border-radius: 6px;
   -webkit-box-shadow: -18px 0px 0 #2f2f2f;
           box-shadow: -18px 0px 0 #2f2f2f;
+}
+
+#library #library::-webkit-scrollbar {
+  display: inline;
 }
 
 #card {
@@ -101,7 +118,7 @@ main {
   margin-top: 6%;
   margin-left: 3%;
   border-radius: 5px;
-  color: #2a2a29;
+  color: red;
   border: 4px solid #2f2f2f;
   -webkit-box-shadow: -5px 5px 0 #2f2f2f;
           box-shadow: -5px 5px 0 #2f2f2f;

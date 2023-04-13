@@ -1,4 +1,5 @@
 let myLibrary = [];
+hCounter = 0;
 
 function Book(title, hours, rating){
     this.title = title;
@@ -20,24 +21,26 @@ for(let i = 0; i < myLibrary.length; i++){
     let bookEl = document.createElement("div");
     bookEl.innerHTML =`
     <div class="card-header">
-        <h3 class="title">${book.title}</h3>
+        <h2 class="cardTitle">${book.title}</h3>
     </div>
     <div class="card-body">
-        <p>${book.hours}</p>
-        <p>${book.rating}</p>
+        <p>Hours Played: ${book.hours}</p>
+        <p>Rating: ${book.rating}</p>
         `
-
+    
     bookEl.style.border = "2px solid black";
     bookEl.style.width = "25%";
     bookEl.style.height = "40%";
     bookEl.style.background = "rgb(224, 224, 224)";
     bookEl.style.margin = "30px";
+    bookEl.style.fontSize = "1.2rem";
   
     bookEl.classList.add("#card");
 
     // <button class="remove-btn" onclick="removeBook(${i})">Remove</button>
     // <button class="toggle-read-btn" onclick="toggleRead(${i})">Toggle Read</button>
     LibraryEl.appendChild(bookEl);
+
 }
 }
 
@@ -65,6 +68,12 @@ newBookbtn.addEventListener("click", function(){
 document.querySelector("#new-book-form").addEventListener("submit", function(event){
 event.preventDefault();
 addBookToLibrary();
+Form.reset();
+
+
+var bookNum = document.querySelector("#BookNum");
+bookNum.textContent = `${myLibrary.length}`;
 });
+
 
 
