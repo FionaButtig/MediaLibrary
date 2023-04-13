@@ -8,22 +8,25 @@
 
 }
 
+
+
 header{
     background: rgb(224, 224, 224);
     width: 100vw;
-    height: 80px;
+    height: 60px;
     overflow: hidden;
+    text-align: center;
 
     h1{
+      float: left;
         color: rgb(42, 42, 41);
-        padding-top: 2%;
         padding-left: 1%;
+        padding-top: 1%;
         font-weight: 800;
         font-size: 1.9rem;
         letter-spacing: 1px;
     }
 }
-
 
 body{
     overflow-x: hidden;
@@ -32,7 +35,7 @@ body{
 
 main{
     width: 100vw;
-    height:85vh;
+    height: 88vh;
     display: flex;
     justify-content: space-between;
     background:rgb(38, 38, 38);
@@ -49,7 +52,8 @@ main{
 
 #C1{
     width: 100%;
-    height: 35%;
+    height: 38%;
+    
 }
 
 #new-book-btn{
@@ -58,7 +62,7 @@ main{
     box-shadow: -6px 6px 0  rgb(42, 42, 41);
     border-radius: 20px;
     width: 54%;
-    height: 56%;
+    height: 44%;
     font-size: 4rem;
     text-align: center;
     justify-content: center;
@@ -85,10 +89,10 @@ main{
 
 #library{
   background: hsl(80, 91%, 26%);
+  position: relative;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  position: relative;
   overflow-y: scroll;
    left: 1%;
    height: 100%;
@@ -100,7 +104,6 @@ main{
     display: inline;
     }
 }
-
 
 #card{
     background: rgb(224, 224, 224);
@@ -124,7 +127,6 @@ main{
     }
   }
 
-
 #form-popup {
   position: fixed;
   bottom: 25%;
@@ -137,9 +139,9 @@ main{
   /* Add styles to the form container */
   #new-book-form {
     max-width: 300px;
-    padding: 10px;
+    padding: 24px 18px;
     width: 300px;
-    height: 400px;
+    height: 410px;
     background-color: rgb(224, 224, 224);
     position: relative;
     border-radius: 20px;
@@ -171,7 +173,7 @@ main{
   }
 
   #new-book-form #btncancel{
-    background: rgb(204, 143, 30);
+    background: rgb(108, 108, 108);
   }
   
   /* Add a red background color to the cancel button */
@@ -183,7 +185,6 @@ main{
   #new-book-form #btn:hover, #open-button:hover {
     opacity: 1;
   }
-
   
 footer{
     background-color: rgb(42, 42, 41);

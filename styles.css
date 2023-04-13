@@ -9,14 +9,16 @@
 header {
   background: #e0e0e0;
   width: 100vw;
-  height: 80px;
+  height: 60px;
   overflow: hidden;
+  text-align: center;
 }
 
 header h1 {
+  float: left;
   color: #2a2a29;
-  padding-top: 2%;
   padding-left: 1%;
+  padding-top: 1%;
   font-weight: 800;
   font-size: 1.9rem;
   letter-spacing: 1px;
@@ -29,7 +31,7 @@ body {
 
 main {
   width: 100vw;
-  height: 85vh;
+  height: 88vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -50,7 +52,7 @@ main {
 
 #C1 {
   width: 100%;
-  height: 35%;
+  height: 38%;
 }
 
 #new-book-btn {
@@ -60,7 +62,7 @@ main {
           box-shadow: -6px 6px 0 #2a2a29;
   border-radius: 20px;
   width: 54%;
-  height: 56%;
+  height: 44%;
   font-size: 4rem;
   text-align: center;
   -webkit-box-pack: center;
@@ -88,6 +90,7 @@ main {
 
 #library {
   background: #567f06;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -97,7 +100,6 @@ main {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  position: relative;
   overflow-y: scroll;
   left: 1%;
   height: 100%;
@@ -146,9 +148,9 @@ main {
 /* Add styles to the form container */
 #new-book-form {
   max-width: 300px;
-  padding: 10px;
+  padding: 24px 18px;
   width: 300px;
-  height: 400px;
+  height: 410px;
   background-color: #e0e0e0;
   position: relative;
   border-radius: 20px;
@@ -180,7 +182,7 @@ main {
 }
 
 #new-book-form #btncancel {
-  background: #cc8f1e;
+  background: #6c6c6c;
 }
 
 /* Add a red background color to the cancel button */
