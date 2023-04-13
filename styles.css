@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@400;700;900&family=Rubik:ital,wght@0,500;1,800&display=swap");
+* {
+  font-family: "Rubik", sans-serif;
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background: #e0e0e0;
+  width: 100vw;
+  height: 80px;
+}
+
+header h1 {
+  color: #2a2a29;
+  padding-top: 2%;
+  padding-left: 1%;
+  font-weight: 800;
+  font-size: 1.9rem;
+  letter-spacing: 1px;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+main {
+  width: 100vw;
+  height: 85vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #262626;
+}
+
+#btn-container {
+  display: inline-block;
+  height: 100%;
+  width: 16%;
+  background: #76a518;
+  border-radius: 6px;
+}
+
+#C1 {
+  width: 100%;
+  height: 35%;
+}
+
+#new-book-btn {
+  background-color: #e0e0e0;
+  border: 4px solid #2a2a29;
+  -webkit-box-shadow: -6px 6px 0 #2a2a29;
+          box-shadow: -6px 6px 0 #2a2a29;
+  border-radius: 20px;
+  width: 54%;
+  height: 56%;
+  font-size: 4rem;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  left: 24%;
+  top: 24%;
+  color: #2a2a29;
+}
+
+#C2 {
+  width: 90%;
+  margin: 0 auto;
+  height: 60%;
+  border-top: 4px solid #2a2a29;
+}
+
+#C2 p {
+  padding-top: 10%;
+}
+
+#library {
+  background: #567f06;
+  position: relative;
+  left: 1%;
+  height: 100%;
+  width: 84%;
+  border-radius: 6px;
+  -webkit-box-shadow: -18px 0px 0 #2f2f2f;
+          box-shadow: -18px 0px 0 #2f2f2f;
+}
+
+#card {
+  background: #e0e0e0;
+  width: 25%;
+  height: 40%;
+  margin-top: 6%;
+  margin-left: 3%;
+  border-radius: 5px;
+  color: #2a2a29;
+  border: 4px solid #2f2f2f;
+  -webkit-box-shadow: -5px 5px 0 #2f2f2f;
+          box-shadow: -5px 5px 0 #2f2f2f;
+}
+
+#card h4 {
+  font-size: 2rem;
+  padding: 4%;
+  border-bottom: 2px solid #2a2a29;
+}
+
+#card p {
+  padding: 4%;
+}
+
+#form-popup {
+  position: fixed;
+  bottom: 25%;
+  right: 40%;
+  z-index: 9;
+  border-radius: 5px;
+  font-size: 1.5rem;
+}
+
+/* Add styles to the form container */
+#new-book-form {
+  max-width: 300px;
+  padding: 10px;
+  width: 300px;
+  height: 400px;
+  background-color: #e0e0e0;
+  position: relative;
+  border-radius: 20px;
+}
+
+#new-book-form input[type=text], #new-book-form input[type=number] {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #d1d1d1;
+}
+
+/* When the inputs get focus, do something */
+#new-book-form input[type=text]:focus, #new-book-form input[type=number]:focus {
+  background-color: #e0e0e0;
+  outline: none;
+}
+
+#new-book-form button {
+  background-color: #43a904;
+  color: #e0e0e0;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#new-book-form #btncancel {
+  background: #cc8f1e;
+}
+
+/* Add a red background color to the cancel button */
+#new-book-form #cancel {
+  background-color: #5a5858;
+}
+
+/* Add some hover effects to buttons */
+#new-book-form #btn:hover, #open-button:hover {
+  opacity: 1;
+}
+
+footer {
+  background-color: #2a2a29;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 2px solid #2a2a29;
+  border-bottom: none;
+  border-left: none;
+  height: 40px;
+  text-align: left;
+  position: absolute;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+footer p {
+  color: #939393;
+}
+/*# sourceMappingURL=styles.css.map */
