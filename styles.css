@@ -57,6 +57,33 @@ main {
   transition: all 10s ease-in;
 }
 
+.flip-horizontal-top {
+  -webkit-animation: flip-horizontal-top 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  animation: flip-horizontal-top 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+
+@-webkit-keyframes flip-horizontal-top {
+  0% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+  }
+  100% {
+    -webkit-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+  }
+}
+
+@keyframes flip-horizontal-top {
+  0% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+  }
+  100% {
+    -webkit-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+  }
+}
+
 #new-book-btn {
   background-color: #e0e0e0;
   border: 4px solid #2a2a29;
