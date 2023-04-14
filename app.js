@@ -51,6 +51,12 @@ for(let i = 0; i < myLibrary.length; i++){
     let rate = document.createElement("p");
     rate.innerHTML = `Rating: ${book.rating}`;
 
+    let removebtn = document.createElement("button");
+    removebtn.innerHTML = "Remove";
+    removebtn.style.padding = "5px";
+    removebtn.style.background = "white";
+    removebtn.style.border = "2px solid rgb(47, 47, 47)";
+
 
      LibraryEl.appendChild(bookEl);
      bookEl.appendChild(cardHeader);
@@ -58,6 +64,7 @@ for(let i = 0; i < myLibrary.length; i++){
      bookEl.appendChild(cardBody);
      cardBody.appendChild(hplayed);
      cardBody.appendChild(rate);
+     cardBody.appendChild(removebtn);
     // <button class="remove-btn" onclick="removeBook(${i})">Remove</button>
     // <button class="toggle-read-btn" onclick="toggleRead(${i})">Toggle Read</button>
 
