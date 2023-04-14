@@ -28,12 +28,13 @@ for(let i = 0; i < myLibrary.length; i++){
         <p>Rating: ${book.rating}</p>
         `
     
-    bookEl.style.border = "2px solid black";
+    bookEl.style.border = "4px solid rgb(42, 42, 41)";
     bookEl.style.width = "25%";
     bookEl.style.height = "40%";
     bookEl.style.background = "rgb(224, 224, 224)";
     bookEl.style.margin = "30px";
     bookEl.style.fontSize = "1.2rem";
+    bookEl.style.borderRadius = "10px";
   
     bookEl.classList.add("#card");
 
