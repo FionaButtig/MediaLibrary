@@ -20,10 +20,10 @@ for(let i = 0; i < myLibrary.length; i++){
     let book = myLibrary[i];
     let bookEl = document.createElement("div");
     bookEl.innerHTML =`
-    <div class="card-header">
+    <div class="cardHeader">
         <h2 class="cardTitle">${book.title}</h3>
     </div>
-    <div class="card-body">
+    <div class="cardBody">
         <p>Hours Played: ${book.hours}</p>
         <p>Rating: ${book.rating}</p>
         `
@@ -35,7 +35,8 @@ for(let i = 0; i < myLibrary.length; i++){
     bookEl.style.margin = "30px";
     bookEl.style.fontSize = "1.2rem";
     bookEl.style.borderRadius = "10px";
-  
+    bookEl.style.boxShadow = "-14px 14px 0  rgb(42, 42, 41)";
+
     bookEl.classList.add("#card");
 
     // <button class="remove-btn" onclick="removeBook(${i})">Remove</button>
