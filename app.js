@@ -20,30 +20,46 @@ for(let i = 0; i < myLibrary.length; i++){
     let book = myLibrary[i];
 
     let bookEl = document.createElement("div");
-    bookEl.innerHTML =`
-    <div class="cardHeader">
-        <h2 class="cardTitle">${book.title}</h3>
-    </div>
-    <div class="cardBody">
-        <p>Hours Played: ${book.hours}</p>
-       <p>Rating: ${book.rating}</p>
-        `
-    
-     bookEl.style.border = "4px solid rgb(42, 42, 41)";
-     bookEl.style.width = "25%";
-     bookEl.style.height = "20%";
-     bookEl.style.background = "rgb(224, 224, 224)";
-     bookEl.style.marginTop = "40px";
-     bookEl.style.margin = "50px";
-     bookEl.style.fontSize = "1.2rem";
-     bookEl.style.borderRadius = "10px";
-     bookEl.style.boxShadow = "-14px 14px 0  rgb(42, 42, 41)";
+    bookEl.style.border = "4px solid rgb(42, 42, 41)";
+    bookEl.style.width = "25%";
+    bookEl.style.height = "40%";
+    bookEl.style.background = "rgb(224, 224, 224)";
+    bookEl.style.marginTop = "40px";
+    bookEl.style.marginLeft = "60px";
+    bookEl.style.fontSize = "1.2rem";
+    bookEl.style.borderRadius = "10px";
+    bookEl.style.boxShadow = "-14px 14px 0  rgb(42, 42, 41)";
 
-     bookEl.classList.add("#card");
+    let cardHeader = document.createElement("div");
+    cardHeader.style.width = "100%";
+    cardHeader.style.height = "20%";
+    cardHeader.style.borderBottom = "3px solid rgb(47, 47, 47)";
 
+    let cardTitle = document.createElement("h2");
+    cardTitle.innerHTML = book.title;
+    cardTitle.style.fontSize = "2rem";
+    cardTitle.style.padding = "3%";
+
+    let cardBody = document.createElement("div");
+    cardBody.style.width = "100%";
+    cardBody.style.height = "60%";
+    cardBody.style.padding = "10px";
+
+    let hplayed = document.createElement("p");
+    hplayed.innerHTML = `Hours Played: ${book.hours}`;
+
+    let rate = document.createElement("p");
+    rate.innerHTML = `Rating: ${book.rating}`;
+
+
+     LibraryEl.appendChild(bookEl);
+     bookEl.appendChild(cardHeader);
+     cardHeader.appendChild(cardTitle);
+     bookEl.appendChild(cardBody);
+     cardBody.appendChild(hplayed);
+     cardBody.appendChild(rate);
     // <button class="remove-btn" onclick="removeBook(${i})">Remove</button>
     // <button class="toggle-read-btn" onclick="toggleRead(${i})">Toggle Read</button>
-    LibraryEl.appendChild(bookEl);
 
 }
 }
