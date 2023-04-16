@@ -21,14 +21,13 @@ for(let i = 0; i < myLibrary.length; i++){
 
     let bookEl = document.createElement("div");
     bookEl.style.border = "4px solid rgb(42, 42, 41)";
-    bookEl.style.width = "25%";
-    bookEl.style.height = "40%";
+    bookEl.style.width = "18%";
+    bookEl.style.height = "30%";
     bookEl.style.background = "rgb(224, 224, 224)";
     bookEl.style.marginTop = "40px";
     bookEl.style.marginLeft = "60px";
-    bookEl.style.fontSize = "1.2rem";
     bookEl.style.borderRadius = "10px";
-    bookEl.style.boxShadow = "-14px 14px 0  rgb(42, 42, 41)";
+    bookEl.style.boxShadow = "-7px 9px 0  rgb(42, 42, 41)";
 
     let cardHeader = document.createElement("div");
     cardHeader.style.width = "100%";
@@ -37,13 +36,14 @@ for(let i = 0; i < myLibrary.length; i++){
 
     let cardTitle = document.createElement("h2");
     cardTitle.innerHTML = book.title;
-    cardTitle.style.fontSize = "2rem";
+    cardTitle.style.fontSize = "1.5rem";
     cardTitle.style.padding = "3%";
 
     let cardBody = document.createElement("div");
     cardBody.style.width = "100%";
     cardBody.style.height = "60%";
     cardBody.style.padding = "10px";
+    cardBody.style.fontSize = "1rem";
 
     let hplayed = document.createElement("p");
     hplayed.innerHTML = `Hours Played: ${book.hours}`;

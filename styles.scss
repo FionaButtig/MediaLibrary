@@ -46,7 +46,7 @@ main{
     height: 100%;
     width: 16%;
     //background: hsl(80, 75%, 37%);
-    background: linear-gradient(180deg, hsl(80, 75%, 37%),hsl(80, 91%, 26%));
+    background: linear-gradient(180deg, hsl(80, 73%, 41%),hsl(80, 91%, 26%));
     border-radius: 6px;
     overflow: hidden;
 
@@ -125,7 +125,8 @@ main{
   }
 
 #library{
-  background: linear-gradient(140deg, hsl(80, 75%, 37%),hsl(80, 91%, 26%));
+  background: linear-gradient(140deg, hsl(80, 73%, 41%),hsl(80, 91%, 26%));
+  // hsl(80, 74%, 41%)
   //background: linear-gradient(180deg,hsl(80, 91%, 26%), hsl(80, 90%, 21%));
   position: relative;
   display: flex;

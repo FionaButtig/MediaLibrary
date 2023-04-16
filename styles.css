@@ -45,8 +45,8 @@ main {
   display: inline-block;
   height: 100%;
   width: 16%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#76a518), to(#567f06));
-  background: linear-gradient(180deg, #76a518, #567f06);
+  background: -webkit-gradient(linear, left top, left bottom, from(#82b51c), to(#567f06));
+  background: linear-gradient(180deg, #82b51c, #567f06);
   border-radius: 6px;
   overflow: hidden;
 }
@@ -118,7 +118,7 @@ main {
 }
 
 #library {
-  background: linear-gradient(140deg, #76a518, #567f06);
+  background: linear-gradient(140deg, #82b51c, #567f06);
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
