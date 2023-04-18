@@ -53,7 +53,8 @@ for(let i = 0; i < myLibrary.length; i++){
 
     let removebtn = document.createElement("button");
     removebtn.innerHTML = "Remove";
-    removebtn.style.padding = "5px";
+    removebtn.style.padding = "10px";
+    removebtn.style.background = "red";
     removebtn.style.background = "white";
     removebtn.style.border = "2px solid rgb(47, 47, 47)";
 
