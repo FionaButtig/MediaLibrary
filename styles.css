@@ -245,4 +245,12 @@ footer {
 footer p {
   color: #939393;
 }
+
+.testcontainer {
+  display: grind;
+  -ms-grid-rows: 40px 40px 40px 40px;
+  -ms-grid-columns: 20px 40px 40px;
+      grid-template: 40px 40px 40px 40px / 20px 40px 40px;
+  background-color: lightblue;
+}
 /*# sourceMappingURL=styles.css.map */
